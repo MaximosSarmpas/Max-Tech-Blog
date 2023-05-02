@@ -20,10 +20,8 @@
   npm install
   
   ## Usage
-  Open integrated terminal / Run [node server.js] / Open app in localhost port
+  Open integrated terminal / Run [node server.js] / Open app in localhost 3002 port
   
-  ## Tests
-  no test required
   
   ## Contributing
   all contributors are welcome
