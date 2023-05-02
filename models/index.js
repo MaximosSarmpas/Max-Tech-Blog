@@ -5,21 +5,21 @@ const Comment = require('./Comment');
 
 // Setting up the associations between the Post and User models
 // A Post belongs to a User, with a foreign key of 'userId'
-// When a User is deleted, all associated Posts should also be deleted (onDelete: 'CASCADE')
+// When a User is deleted, all associated Posts should also be deleted 
 Post.belongsTo(User,  {
     foreignKey: 'userId',
     onDelete: 'CASCADE'
 });
 // Setting up the associations between the Post and Comment models
 // A Post has many Comments, with a foreign key of 'postId'
-// When a Post is deleted, all associated Comments should also be deleted (onDelete: 'CASCADE')
+// When a Post is deleted, all associated Comments should also be deleted 
 Post.hasMany(Comment,  {
     foreignKey: 'postId',
     onDelete: 'CASCADE'
 });
 // Setting up the associations between the Comment and User models
 // A Comment belongs to a User, with a foreign key of 'userId'
-// When a User is deleted, all associated Comments should also be deleted (onDelete: 'CASCADE')
+// When a User is deleted, all associated Comments should also be deleted 
 Comment.belongsTo(User,  {
     foreignKey: 'userId',
     onDelete: 'CASCADE'
