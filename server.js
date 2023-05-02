@@ -1,4 +1,4 @@
-// Import required modules and libraries
+// Import required dependencies
 const path = require("path");
 const express = require("express");
 const session = require("express-session");
